@@ -11,9 +11,8 @@ class Solution(object):
             if s[i] == t[j]:
                 result += s[i]
                 i += 1
-                j += 1
-            else:
-                j += 1
+                
+            j += 1
         return result==s
 
                 
