@@ -9,7 +9,7 @@ class Solution(object):
         count = Counter(nums1)
         result = []
         for num in nums2:
-            if num in nums1 and count[num]>0:
+            if count[num]>0:
                 result.append(num)
                 count[num] -= 1
         return result
