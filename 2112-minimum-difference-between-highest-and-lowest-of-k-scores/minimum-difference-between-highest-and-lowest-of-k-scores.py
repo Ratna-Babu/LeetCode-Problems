@@ -4,7 +4,7 @@ class Solution:
         n = len(nums)
         ans = float('inf')
 
-        for i in range(n - k + 1):  # sliding window
+        for i in range(n - k + 1):  
             diff = nums[i + k - 1] - nums[i]
             ans = min(ans, diff)
 
