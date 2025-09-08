@@ -1,6 +1,6 @@
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
-        vowels = ('a','e','i','o','u')
+        vowels = set('aeiou')
         v_count = 0
 
         for i in range(k):
